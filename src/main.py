@@ -93,6 +93,7 @@ async def run_cli():
 
 if __name__ == "__main__":
     try:
+        #testing
         asyncio.run(run_cli())
     except KeyboardInterrupt:
         pass
