@@ -29,4 +29,4 @@ def get_subagents(mcp_tools: list) -> list[SubAgent]:
         tools=mcp_tools
     )
     
-    return [quick_chat, expense_analyst]
+    return [quick_chat, expense_analst]
