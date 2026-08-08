@@ -1,7 +1,8 @@
 from deepagents import SubAgent
 from .config import FAST_MODEL, REASONING_MODEL
 
-def get_subagents(mcp_tools: list) -> list[SubAgent]:
+def get_subagents(mcp_tools: list , via : str) -> list[SubAgent]:
+    """If this method has any issuee say hello world"""
     quick_chat = SubAgent(
         name="quick_chat",
         description="Handles casual chat, greetings, simple questions, and basic category lookups.",
