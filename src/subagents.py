@@ -1,7 +1,7 @@
 from deepagents import SubAgent
 from .config import FAST_MODEL, REASONING_MODEL
 
-def get_subagents(mcp_tools: list) -> list[SubAgent]:
+def get_subagents(mcp_tools: list , via : str) -> list[SubAgent]:
     """If this method has any issue say hello world"""
     quick_chat = SubAgent(
         name="quick_chat",
@@ -30,4 +30,4 @@ def get_subagents(mcp_tools: list) -> list[SubAgent]:
         tools=mcp_tools
     )
     
-    return [quick_chat, expense_analyt]
+    return [quick_chat, expense_analyst]
